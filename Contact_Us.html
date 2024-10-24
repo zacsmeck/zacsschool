@@ -1,0 +1,44 @@
+<html>
+<head>
+<script>
+function check() 
+{
+var forc = document.getElementById("forsu").value;
+if (forc == "4") 
+{
+document.getElementById("forsu").text="Reception";
+}
+else if (forc == "5")
+{
+document.getElemntById("forsu").text="Year One";
+}
+else 
+{
+document.getElementById("forsu").text="Year Two";
+}
+}
+</script>
+<link href="Contact_Us.css" rel="stylesheet">
+</head>
+<body bgcolor="black" >
+<center>
+<font face="Fantasy" color="white"><h1>Larchwood Primary School</h1>
+<h2>The Contact Number is 01277 372450</h2>
+</font>
+</center>
+<img src="https://map.getthedata.com/district/cm15-9ng.png" height="500px" width="700px">
+<form id="form">
+<label>Enter your child's age.</label><br>
+<input type="text" id="forsu"><br><br>
+<label>Enter your child's date of birth.</label><br>
+<input type="date"><br><br>
+<label>Enter your child's name.</label><br>
+<input type="text"><br><br><br>
+<input type="button" value="submit" id="sb" onclick="check()">
+<input type="button" value="reset" id="rb">
+</form>
+<font size="20px" face="cursive">
+<a href="index.html" id="backco">Back</a>
+</font>
+</body>
+</html>
